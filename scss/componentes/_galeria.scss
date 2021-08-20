@@ -1,0 +1,13 @@
+@import '../base/mixins';
+.grid-container {
+    div {
+        img {
+            animation: nth($animaciones, 4);
+        }
+        img:hover {
+            border-radius: 50%;
+            @include mixin-transform(scale(1.1));
+            transition-duration: 1.3s;
+        }
+    }
+}

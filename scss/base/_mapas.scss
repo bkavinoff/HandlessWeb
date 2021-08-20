@@ -1,0 +1,27 @@
+//Dependiendo de si el usuario está logueado o no, se usará un set de colores
+//Acá seteo un mixin con una condición, y dependiendo del valor de la variable $logged
+//utilizo un mapeo de colores y otro
+$logueado: ( color-l:$naranja-titulos, bg-color-l: $fondo-btn-footer);
+$no-logueado: ( color-nl:$fondo-btn-footer, bg-color-nl: $naranja-titulos);
+@mixin user-logged($logged) {
+    @if $logged==1 {
+        color: map-get($logueado, color-l);
+        background-color: map-get($logueado, bg-color-l);
+        border: 1px solid $fondo-btn-footer;
+        a {
+            color: map-get($logueado, color-l);
+        }
+    }
+    @else {
+        color: map-get($no-logueado, color-nl);
+        background-color: map-get($no-logueado, bg-color-nl);
+        border: 1px solid $fondo-btn-footer;
+        a {
+            color: map-get($no-logueado, color-nl);
+        }
+    }
+}
+
+.btn-footer {
+    @include user-logged(0);
+}

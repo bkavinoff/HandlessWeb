@@ -1,0 +1,29 @@
+header {
+    .bg-nav-handless {
+        background-color: $naranja-header;
+        .menu-container:nth-child(1) {
+            animation: fadeIn;
+            animation-duration: 1s;
+            .logo {
+                width: 3em;
+                height: 3em;
+            }
+        }
+        .dropdown-menu {
+            background-color: $naranja-header;
+            .dropdown-item {
+                &:hover {
+                    @extend %nav-hover;
+                }
+            }
+        }
+        #submenu-perfil {
+            color: rgb(43, 43, 43);
+        }
+        .nav-item {
+            &:hover {
+                @extend %nav-hover;
+            }
+        }
+    }
+}

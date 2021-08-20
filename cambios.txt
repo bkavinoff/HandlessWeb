@@ -1,0 +1,81 @@
+----------------------------------------------------------------------------------------------------
+2021-08-19
+----------------------------------------------------------------------------------------------------
+
+-Agregué una página 404 que redirige al Index.
+
+-Se agregaron los siguientes keywords a todas las paginas:
+<meta name="keywords" content="Juego, Plataforma, 2D, Handless, Aventura, Mundos Imaginarios, Niño, Sueño, Miedos, Enemigos, Niveles, Ranking, Unity, Unity 2D, Obstáculos, Dificultad, Estrategia, Colores, Lapices, Cementerio">
+
+-Se agregó el meta Description a todas las páginas.
+
+-Se agregó los meta:
+<meta copy="Handless">
+<meta author="Brian Kavinoff">
+
+-Se agregó open graph en todas las páginas, y se utilizó una descripción distinta en cada página:
+Index: Inicia una aventura poniendote en la piel de un niño que recorre mundos imaginarios. Diseña una estrategia para poder vencer los obstáculos que se te atravesarán, y llegarás una historia inesperada.
+Registro: Registrate para poder acceder al juego con tu cuenta
+Puntajes: Accede a las tablas de puntajes de los niveles del juego.
+Perfil: Accede a tu perfil para editar tus datos
+Nosotros: Un poco de información del desarrollo del juego.
+Login: Inicia sesion para una experiencia más personalizada.
+Galeria: Accede a la galería de imágenes del juego
+Contacto: Envianos un mensaje!
+404: Oops! - Página no encontrada.
+
+-Se cambiaron los títulos de todas las páginas, utilizando un título único por página:
+Index: Handless - Una aventura Inerperada...
+Registro: Handless|Registro
+Puntajes: Handless|Puntajes
+Perfil: Handless|Perfil
+Nosotros: Handless|Nosotros
+Login: Handless|Login
+Galeria: Handless|Galería
+Contacto: Handless|Contacto
+404: Oops! - 404
+
+-Pasé todas las imagenes a formato PNG
+-Pasé todas las imagenes PNG por un compresor para que pesen menos
+
+-Se cambia la posición del video del index, moviéndolo debajo de las tarjetas y se le agrega un h2 con el título.
+
+-Se modifica banner principal: 
+    -Cambio de imagen
+    -Cambio de posición del contenedor del título y subtítulo para apreciar mejor la imagen de fondo (Banner 1)
+
+- Se elimina la clase "container-fluid" al body del index, para evitar margenes que no están presentes en 
+las otras secciones del sitio.
+
+-Se modifican las cards del index para resolución de Tablet, haciendo que ocupen todo el contenido de la row
+al igual que en mobile.
+
+-Se agrega página 404 con sus respectivos estilos
+
+-Se modifica el "alt" de las imagenes de todo el sitio, agregandole una descripción acorde.
+
+-se agrega la propiedad "title" al video del index con una descripción acorde. 
+
+
+----------------------------------------------------------------------------------------------------
+2021-08-14
+----------------------------------------------------------------------------------------------------
+-Se crea la estructura de organizacion del sass (base y componentes)
+
+-Se modifica en _colores.scss el valor de la variable $fondo-copyright, utilizando la funcion darken()
+
+-Se crea el archivo _mapas.scss y dentro se agrega un mixin con condicional y mapeo para el color 
+de texto de los botones del footer
+
+-se crea el archivo _mixins.scss y se agrega el mixin-transform para aplicar transform 
+con compatibilidad para todos los navegadores
+
+-se agrega en el archivo _mixins.scss los mixins: mixin-grid-container y mixin-grid-item, los cuales
+se utilizan en el archivo _media-querys.scss en las secciones de Galería para los tres tipos de pantalla
+
+-se crea el archivo _operadores.scss, aplicandole una operación al ancho de la imagen de perfil, de la pantalla perfil.
+
+-se agrega un cambio en el background color de los items del nav al hacer hover, usando la funciona darken()
+
+-se agrega favicon a todos los html
+

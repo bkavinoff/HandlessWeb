@@ -1,0 +1,13 @@
+/*footer*/
+
+.footer {
+    background-color: $fondo-footer;
+    .btn-footer {
+        width: 60px;
+        text-align: center;
+        border-radius: nth($border-radius, 1);
+    }
+    .copyright {
+        background-color: $fondo-copyright;
+    }
+}

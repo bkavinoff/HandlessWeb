@@ -1,0 +1,21 @@
+%puntajes-nosotros-contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+%puntajes-nosotros-titulos {
+    padding: 5px;
+    margin-top: 10px;
+    animation: nth($animaciones, 4);
+    color: $naranja-titulos;
+    font-size: 1.5em;
+}
+
+%nav-hover {
+    background-color: darken($naranja-header, 10%);
+    border-radius: 5px;
+}

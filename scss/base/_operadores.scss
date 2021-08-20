@@ -1,0 +1,9 @@
+/*operadores*/
+
+$ancho: 100%;
+.img-perfil-container {
+    width: $ancho;
+    .img-perfil {
+        width: $ancho - 60%;
+    }
+}

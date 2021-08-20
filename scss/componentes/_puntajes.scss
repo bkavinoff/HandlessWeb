@@ -1,0 +1,24 @@
+.contenido-puntajes {
+    @extend %puntajes-nosotros-contenido;
+    h4 {
+        @extend %puntajes-nosotros-titulos;
+    }
+    .puntajes-bloques {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        border: nth($borders, 1);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 10px auto;
+        min-width: fit-content;
+        .tabla-puntajes {
+            width: 100%;
+            .thead-puntajes {
+                background-color: $fondo-header-puntajes;
+            }
+        }
+    }
+}

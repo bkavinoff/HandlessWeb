@@ -1,0 +1,25 @@
+.formulario {
+    border: nth($borders, 1);
+    border-radius: 5px;
+    padding: 5% 5%;
+    .formulario input[type=text],
+    .formulario select,
+    .formulario textarea {
+        width: 100%;
+    }
+    .btn-formulario {
+        border-color: $naranja-titulos;
+        color: $naranja-titulos;
+    }
+    .btn-formulario:hover {
+        border-color: $naranja-titulos;
+        background-color: $naranja-header;
+    }
+}
+
+.formulario-perfil {
+    width: 50%;
+    img {
+        margin-bottom: 3rem;
+    }
+}

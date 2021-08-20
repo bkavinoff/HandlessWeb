@@ -1,0 +1,65 @@
+@import 'colores';
+@import 'fuentes';
+* {
+    font-family: 'roboto-medium', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'roboto-medium';
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: nth($font-size-texto, 5);
+}
+
+h2 {
+    font-size: nth($font-size-texto, 4);
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: $naranja-titulos;
+}
+
+body {
+    background-color: $blanco-body;
+}
+
+.titulo-seccion {
+    padding-top: 5%;
+}
+
+.titulo-seccion h2 {
+    margin-top: 1em;
+    animation: nth($animaciones, 5);
+}
+
+.cuerpo-seccion {
+    padding: 40px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+$video-sizes: 24em,
+25em,
+26em,
+27em,
+28em,
+29em,
+30em,
+4rem,
+5rem;
+$borders:1px solid $gris-bordes,
+1px solid $naranja-titulos;
+$border-radius: 5px,
+50%,
+10px;

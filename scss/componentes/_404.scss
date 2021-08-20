@@ -1,0 +1,77 @@
+    .notfound-container {
+        height: 100vh;
+        .notfound {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            .notfound-404 {
+                display: flex;
+                align-content: center;
+                h1 {
+                    animation: nth($animaciones, 4);
+                    font-family: 'Montserrat', sans-serif;
+                    // font-size: 15em;
+                    font-weight: 900;
+                    margin: 0;
+                    background: url('../multimedia/img/404-bg.png') no-repeat;
+                    background-clip: text;
+                    background-size: cover;
+                    background-position: center;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            h2 {
+                animation: nth($animaciones, 5);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                margin: 0.5em auto;
+            }
+            p {
+                font-family: "roboto-medium", sans-serif;
+                color: #333;
+                font-size: 1em;
+                font-weight: 6;
+                margin: 1em auto;
+            }
+        }
+    }
+    
+    //Desktop
+    @media only screen and (min-width: 960px) {
+        .notfound-404 {
+            height: 20rem;
+            h1 {
+                font-size: 15rem;
+            }
+        }
+    }
+    
+    //Tablet
+    @media only screen and (min-width: 415px) and (max-width: 960px) {
+        .notfound-404 {
+            height: 12rem;
+            h1 {
+                font-size: 10rem;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+    
+    //mobile
+    @media only screen and (max-width: 414px) {
+        .notfound-404 {
+            height: 9rem;
+            h1 {
+                font-size: 7rem;
+            }
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }

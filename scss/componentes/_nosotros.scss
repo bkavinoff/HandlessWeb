@@ -1,0 +1,16 @@
+.contenido-nosotros {
+    @extend %puntajes-nosotros-contenido;
+    h4 {
+        @extend %puntajes-nosotros-titulos;
+    }
+    .card-nosotros {
+        max-width: 45rem;
+        min-width: 10rem;
+    }
+    .img-nosotros-sp {
+        width: 100%;
+    }
+    .card-nosotros-equipo {
+        font-size: 2em;
+    }
+}

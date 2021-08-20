@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('../fonts-web/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'monserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts-web/Roboto-Medium.ttf') format('truetype');
+}
+
+$font-roboto-medium:'roboto-medium',
+'sans-serif';
+$font-size-texto: 1em,
+2em,
+3em,
+4em,
+5em;

@@ -1,0 +1,18 @@
+@mixin mixin-transform($propiedad) {
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}
+
+@mixin mixin-grid-container($display, $template-columns, $template-rows, $gap) {
+    display: $display;
+    grid-template-columns: $template-columns;
+    grid-template-rows: $template-rows;
+    grid-gap: $gap;
+}
+
+@mixin mixin-grid-item($grid-column, $grid-row) {
+    grid-column: $grid-column;
+    grid-row: $grid-row;
+}

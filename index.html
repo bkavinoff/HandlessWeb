@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/b9e90dd97f.js" crossorigin="anonymous"></script>
+
+    <!-- animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- meta tags -->
+    <!-- 70 a 320 caracteres / 180 es nivel dios -->
+    <meta name="description" content="Inicia una aventura poniendote en la piel de un niño que recorre mundos imaginarios. Diseña una estrategia para poder vencer los obstáculos que se te atravesarán, y llegarás una historia inesperada.">
+    <!-- Keywords -->
+    <!-- Normalmente 20 keywords está bien -->
+    <meta name="keywords" content="Juego, Plataforma, 2D, Handless, Aventura, Mundos Imaginarios, Niño, Sueño, Miedos, Enemigos, Niveles, Ranking, Unity, Unity 2D, Obstáculos, Dificultad, Estrategia, Colores, Lapices, Cementerio">
+    <meta copy="Handless">
+    <meta author="Brian Kavinoff">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Handless - Una aventura Inerperada...">
+    <meta property="og:description" content="Inicia una aventura poniendote en la piel de un niño que recorre mundos imaginarios. Diseña una estrategia para poder vencer los obstáculos que se te atravesarán, y llegarás una historia inesperada.">
+    <meta property="og:site_name" content="Handless">
+    <meta property="og:image" content="multimedia/img/favicon/favicon-32x32.png">
+    <meta property="og:locale" content="es ES">
+
+
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 35 a 65 caracteres -->
+    <title>Handless - Una aventura inesperada...</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="multimedia/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="multimedia/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="multimedia/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="multimedia/img/favicon/site.webmanifest">
+
+    <!-- Titulo -->
+    <title>Handless</title>
+</head>
+
+<body>
+    <!--Menu Principal-->
+    <header id="inicio">
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav-handless fixed-top">
+            <div class="container-fluid menu-container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="multimedia/img/Logo.png" alt="Logo del sitio del juego Handless">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-colapsable" aria-controls="nav-colapsable" aria-expanded="false" aria-label="Cambiar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-colapsable">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Puntajes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="submenu">
+                                <li><a class="dropdown-item" href="secciones/puntajes.html">General</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="secciones/puntajes.html#ancla-nivel-1">Nivel 1</a></li>
+                                <li><a class="dropdown-item" href="secciones/puntajes.html#ancla-nivel-2">Nivel 2</a></li>
+                                <li><a class="dropdown-item" href="secciones/puntajes.html#ancla-nivel-3">Nivel 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="secciones/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="secciones/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="secciones/registro.html">Registro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="secciones/login.html">Ingresar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="submenu-perfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="logo" src="multimedia/img/Perfil.png" alt="Imagen de Perfil del usuario">
+                            </a>
+                            <ul class="dropdown-menu dropdown-perfil" aria-labelledby="submenu-perfil">
+                                <li><a class="dropdown-item" href="secciones/perfil.html">Perfil</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row">
+            <!--banner principal-->
+            <div id="carousel-index" class="carousel carousel-light slide col-12" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-index" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Banner 1"></button>
+                    <button type="button" data-bs-target="#carousel-index" data-bs-slide-to="1" aria-label="Banner 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <img src="multimedia/img/Banner.png" class="d-block w-100 mx-auto" alt="Banner del primer nivel del juego Handless">
+                        <div class="carousel-caption d-xs-block carousel-caption-faded carousel-caption-superior">
+                            <h1 class="titulo-index">HANDLESS</h1>
+                            <p class="banner-subtitulo">[ Una aventura inesperada ]</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="multimedia/img/Banner2.png" class="d-block w-100 mx-auto" alt="Banner del segundo nivel del juego Handless">
+                        <div class="carousel-caption caption-banner-2 d-xs-block carousel-caption-faded">
+                            <h1 class="titulo-index">HANDLESS</h1>
+                            <p class="banner-subtitulo">[ Una aventura inesperada ]</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-index" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-index" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </div>
+
+
+        <!--Contenido-->
+        <section class="contenido">
+            <div class="row row-cols-1 row-cols-md-1 g-4 index-cards">
+                <div class="col">
+                    <div class="card index-section-img-1 text-center">
+                        <img src="multimedia/img/Energia.png" class="card-img-top" alt="Imagen que representa energía">
+                        <div class="card-body">
+                            <h5 class="card-title">Resumen</h5>
+                            <p class="card-text">En este juego, podrás vivir una aventura de fantasía. Es un juego de plataformas 2D en el que tendrás que evadir obstáculos a medida que avancen los niveles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card index-section-img-2 text-center">
+                        <img src="multimedia/img/Espada.png" class="card-img-top" alt="Imagen que representa una espada">
+                        <div class="card-body">
+                            <h5 class="card-title">Niveles</h5>
+                            <p class="card-text">En el primer nivel encontrarás una serie de obstáculos simples, que te ayudarán a entender los movimientos que se pueden realizar</p>
+                            <p class="card-text">En el segundo nivel, ya te encontrarás con obstáculos mas complejos, y trampas que deberás evadir para no perder.</p>
+                            <p class="card-text">En el tercer y último nivel, pelearás contra el "Malo" del juego, la velocidad y la táctica será clave para poder derrotarlo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card index-section-img-3 text-center">
+                        <img src="multimedia/img/Medalla.png" class="card-img-top" alt="Imagen que representa una medalla">
+                        <div class="card-body">
+                            <h5 class="card-title">Clasificaciones</h5>
+                            <p class="card-text">Este juego cuenta con un sistema de clasificaciones según el tiempo en que el jugador logra avanzar en los niveles</p>
+                            <p class="card-text">Cada nivel tendrá una tabla de clasificaciones, y luego habrá una tabla general, en donde se mostrarán los mejores tiempos de todo el juego.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seccion-video-index">
+                <h2 class="texto-titulo-video-index">Handless en acción</h2>
+                <div class="row embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item index-video col-12" src="https://www.youtube.com/embed/ucHIHVW82-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        title="Video que muestra un poco de jugabilidad del juego Handless"></iframe>
+                </div>
+            </div>
+            <div class="flecha-subir-container">
+                <a href="#inicio">
+                    <button type="button" class="btn btn-lg btn-floating btn-footer flecha-subir">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center text-lg-start footer">
+        <div class="container d-flex justify-content-center py-5 btn-footer-container">
+            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer">
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer">
+                <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer">
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer">
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            </button>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3 copyright">
+            © 2021 Copyright: Handless
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
