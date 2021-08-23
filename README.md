@@ -6,6 +6,7 @@
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=bkavinoff" alt="bkavinoff" /></a> </p>
 
 - 🔭 I’m currently working on [Handless Web](https://github.com/bkavinoff/HandlessWeb)
+- If you want to have a little taste of the game (beta), you can enter: <a href="https://bkavinoff.itch.io/handless">https://bkavinoff.itch.io/handless</a>
 
 - 📫 How to reach me **bkavinoff@gmail.com**
 
