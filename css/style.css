@@ -2,22 +2,26 @@
 /*Animaciones*/
 @font-face {
   font-family: "roboto-medium";
+  font-display: swap;
   src: url("../fonts-web/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "monserrat";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts-web/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "roboto-medium";
+  font-display: swap;
   src: url("../fonts-web/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "monserrat";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts-web/Roboto-Medium.ttf") format("truetype");
 }
 * {
