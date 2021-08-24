@@ -364,8 +364,13 @@ header .bg-nav-handless #submenu-perfil {
   }
 
   /*Carousel*/
+  .img-banner {
+    width: 1349px;
+    height: 603px;
+  }
+
   #carousel-index {
-    margin-top: 8%;
+    margin-top: 6%;
   }
   #carousel-index .carousel-caption-superior {
     bottom: 18rem;
@@ -459,6 +464,10 @@ header .bg-nav-handless #submenu-perfil {
   }
 
   /*Carousel*/
+  .img-banner {
+    height: 400px;
+  }
+
   #carousel-index {
     margin-top: 10%;
     min-width: 48rem;
@@ -558,6 +567,10 @@ header .bg-nav-handless #submenu-perfil {
   }
 
   /*Carousel*/
+  .img-banner {
+    height: 250px;
+  }
+
   #carousel-index {
     margin-top: 5em;
   }
