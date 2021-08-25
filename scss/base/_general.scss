@@ -63,3 +63,17 @@ $borders:1px solid $gris-bordes,
 $border-radius: 5px,
 50%,
 10px;
+//banner webhost
+html {
+    body {
+        div {
+            a {
+                img {
+                    width: 1px;
+                    height: 1px;
+                    display: none;
+                }
+            }
+        }
+    }
+}

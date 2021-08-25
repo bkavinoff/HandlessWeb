@@ -73,6 +73,12 @@ body {
   justify-content: center;
 }
 
+html body div a img {
+  width: 1px;
+  height: 1px;
+  display: none;
+}
+
 .contenido-puntajes, .contenido-nosotros {
   width: 100%;
   display: flex;
