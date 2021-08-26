@@ -29,6 +29,10 @@ h2 {
     color: $naranja-titulos;
 }
 
+h3 {
+    text-align: center;
+}
+
 body {
     background-color: $blanco-body;
 }
@@ -63,17 +67,3 @@ $borders:1px solid $gris-bordes,
 $border-radius: 5px,
 50%,
 10px;
-//banner webhost
-html {
-    body {
-        div {
-            a {
-                img {
-                    width: 1px;
-                    height: 1px;
-                    display: none;
-                }
-            }
-        }
-    }
-}

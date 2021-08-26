@@ -16,7 +16,10 @@
     }
 }
 
-// width="1349px" height="603px"
+.contenedor-h1-index {
+    background-color: $titulo-video-youtube;
+}
+
 
 /*Video*/
 
@@ -24,8 +27,9 @@
     height: max-content;
     width: 100%;
     background-color: $fondo-header-puntajes;
-    .texto-titulo-video-index {
+    .texto-titulos-index {
         font-size: nth($font-size-texto, 4);
+        color: $titulo-video-youtube;
     }
     .index-video {
         text-align: center;

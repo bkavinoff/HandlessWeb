@@ -53,6 +53,10 @@ h2 {
   color: #FF7900;
 }
 
+h3 {
+  text-align: center;
+}
+
 body {
   background-color: #dddddd;
 }
@@ -71,12 +75,6 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-}
-
-html body div a img {
-  width: 1px;
-  height: 1px;
-  display: none;
 }
 
 .contenido-puntajes, .contenido-nosotros {
@@ -135,14 +133,19 @@ header .bg-nav-handless #submenu-perfil {
   animation: bounceInLeft 2s;
 }
 
+.contenedor-h1-index {
+  background-color: #133131;
+}
+
 /*Video*/
 .seccion-video-index {
   height: max-content;
   width: 100%;
   background-color: #f5b056;
 }
-.seccion-video-index .texto-titulo-video-index {
+.seccion-video-index .texto-titulos-index {
   font-size: 4em;
+  color: #133131;
 }
 .seccion-video-index .index-video {
   text-align: center;
@@ -381,6 +384,21 @@ header .bg-nav-handless #submenu-perfil {
   #carousel-index .carousel-caption-superior {
     bottom: 18rem;
   }
+  #carousel-index .titulo-index {
+    font-size: 5em;
+    color: #FF7900;
+  }
+
+  .contenedor-h1-index h1 {
+    font-size: 4em;
+  }
+  .contenedor-h1-index h2 {
+    font-size: 3em;
+  }
+
+  .seccion-video-index .texto-titulos-index {
+    font-size: 4em;
+  }
 
   /*Galería*/
   .galeria-grid-container {
@@ -483,6 +501,21 @@ header .bg-nav-handless #submenu-perfil {
   }
   #carousel-index .titulo-index {
     font-size: 3em;
+  }
+
+  .contenedor-h1-index .texto-titulos-index {
+    font-size: 3em;
+  }
+  .contenedor-h1-index .texto-titulos-index-subtitulo {
+    font-size: 2em;
+  }
+
+  .seccion-video-index .texto-titulos-index {
+    font-size: 3em;
+  }
+
+  .index-section-img-2 {
+    margin: 0.5rem auto;
   }
 
   /*Galería*/
@@ -595,7 +628,21 @@ header .bg-nav-handless #submenu-perfil {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  .contenedor-h1-index .texto-titulos-index {
+    font-size: 2em;
+  }
+  .contenedor-h1-index .texto-titulos-index-subtitulo {
+    font-size: 1em;
+  }
+
+  .index-section-img-2 {
+    margin: 0.5rem auto;
+  }
+
   .seccion-video-index .texto-titulo-video-index {
+    font-size: 2em;
+  }
+  .seccion-video-index .texto-titulos-index {
     font-size: 2em;
   }
 

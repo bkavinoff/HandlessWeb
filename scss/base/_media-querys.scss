@@ -21,6 +21,23 @@
         .carousel-caption-superior {
             bottom: 18rem;
         }
+        .titulo-index {
+            font-size: 5em;
+            color: $naranja-titulos;
+        }
+    }
+    .contenedor-h1-index {
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 3em;
+        }
+    }
+    .seccion-video-index {
+        .texto-titulos-index {
+            font-size: 4em;
+        }
     }
     /*Galería*/
     .galeria-grid-container {
@@ -99,6 +116,22 @@
         .titulo-index {
             font-size: 3em;
         }
+    }
+    .contenedor-h1-index {
+        .texto-titulos-index {
+            font-size: 3em;
+        }
+        .texto-titulos-index-subtitulo {
+            font-size: 2em;
+        }
+    }
+    .seccion-video-index {
+        .texto-titulos-index {
+            font-size: 3em;
+        }
+    }
+    .index-section-img-2 {
+        margin: 0.5rem auto;
     }
     /*Galería*/
     .galeria-grid-container {
@@ -185,9 +218,23 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
     }
+    .contenedor-h1-index {
+        .texto-titulos-index {
+            font-size: 2em;
+        }
+        .texto-titulos-index-subtitulo {
+            font-size: 1em;
+        }
+    }
+    .index-section-img-2 {
+        margin: 0.5rem auto;
+    }
     .seccion-video-index {
         .texto-titulo-video-index {
             font-size: nth($font-size-texto, 2);
+        }
+        .texto-titulos-index {
+            font-size: 2em;
         }
     }
     .index-video {

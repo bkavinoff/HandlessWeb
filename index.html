@@ -61,7 +61,7 @@
     <header id="inicio">
         <nav class="navbar navbar-expand-lg navbar-light bg-nav-handless fixed-top">
             <div class="container-fluid menu-container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.html" aria-label="Handless Logo">
                     <img class="logo" src="multimedia/img/Logo.png" alt="Logo del sitio del juego Handless">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-colapsable" aria-controls="nav-colapsable" aria-expanded="false" aria-label="Cambiar navegación">
@@ -73,7 +73,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="#" id="submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Submenu Perfil">
                               Puntajes
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="submenu">
@@ -108,18 +108,20 @@
                         </ul>
                     </div>
                     <div class="d-flex">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="submenu-perfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img class="logo" src="multimedia/img/Perfil.png" alt="Imagen de Perfil del usuario">
-                            </a>
-                            <ul class="dropdown-menu dropdown-perfil" aria-labelledby="submenu-perfil">
-                                <li><a class="dropdown-item" href="secciones/perfil.html">Perfil</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
-                            </ul>
-                        </li>
+                        <ul class="nav-item mb-0 pl-md-0 p-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="submenu-perfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="logo" src="multimedia/img/Perfil.png" alt="Imagen de Perfil del usuario">
+                                </a>
+                                <ul class="dropdown-menu dropdown-perfil" aria-labelledby="submenu-perfil">
+                                    <li><a class="dropdown-item" href="secciones/perfil.html">Perfil</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -138,14 +140,14 @@
                     <div class="carousel-item active" data-bs-interval="6000">
                         <img src="multimedia/img/Banner.png" class="d-block w-100 mx-auto img-banner" alt="Banner del primer nivel del juego Handless">
                         <div class="carousel-caption d-xs-block carousel-caption-faded carousel-caption-superior">
-                            <h1 class="titulo-index">HANDLESS</h1>
+                            <p class="titulo-index">HANDLESS</p>
                             <p class="banner-subtitulo">[ Una aventura inesperada ]</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="6000">
                         <img src="multimedia/img/Banner2.png" class="d-block w-100 mx-auto img-banner" alt="Banner del segundo nivel del juego Handless">
-                        <div class="carousel-caption caption-banner-2 d-xs-block carousel-caption-faded">
-                            <h1 class="titulo-index">HANDLESS</h1>
+                        <div class="carousel-caption caption-banner-2 d-xs-block carousel-caption-faded carousel-caption-superior">
+                            <p class="titulo-index">HANDLESS</p>
                             <p class="banner-subtitulo">[ Una aventura inesperada ]</p>
                         </div>
                     </div>
@@ -163,22 +165,26 @@
 
 
         <!--Contenido-->
-        <section class="contenido">
+        <section class="contenido contenido-index">
+            <div class="contenedor-h1-index">
+                <h1 class="texto-titulos-index">Handless</h1>
+                <h2 class="texto-titulos-index-subtitulo">[ Una aventura inesperada ]</h2>
+            </div>
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 index-cards">
                 <div class="col">
                     <div class="card index-section-img-1 text-center">
                         <img src="multimedia/img/Energia.png" class="card-img-top" alt="Imagen que representa energía" width="128px" height="128px">
                         <div class="card-body">
-                            <h5 class="card-title">Resumen</h5>
+                            <h3 class="card-title">Resumen</h3>
                             <p class="card-text">En este juego, podrás vivir una aventura de fantasía. Es un juego de plataformas 2D en el que tendrás que evadir obstáculos a medida que avancen los niveles.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mt-md-1 mt-sm-1 mb-md-1 mb-sm-1">
                     <div class="card index-section-img-2 text-center">
                         <img src="multimedia/img/Espada.png" class="card-img-top" alt="Imagen que representa una espada" width="128px" height="128px">
                         <div class="card-body">
-                            <h5 class="card-title">Niveles</h5>
+                            <h3 class="card-title">Niveles</h3>
                             <p class="card-text">En el primer nivel encontrarás una serie de obstáculos simples, que te ayudarán a entender los movimientos que se pueden realizar</p>
                             <p class="card-text">En el segundo nivel, ya te encontrarás con obstáculos mas complejos, y trampas que deberás evadir para no perder.</p>
                             <p class="card-text">En el tercer y último nivel, pelearás contra el "Malo" del juego, la velocidad y la táctica será clave para poder derrotarlo.</p>
@@ -189,7 +195,7 @@
                     <div class="card index-section-img-3 text-center">
                         <img src="multimedia/img/Medalla.png" class="card-img-top" alt="Imagen que representa una medalla" width="128px" height="128px">
                         <div class="card-body">
-                            <h5 class="card-title">Clasificaciones</h5>
+                            <h3 class="card-title">Clasificaciones</h3>
                             <p class="card-text">Este juego cuenta con un sistema de clasificaciones según el tiempo en que el jugador logra avanzar en los niveles</p>
                             <p class="card-text">Cada nivel tendrá una tabla de clasificaciones, y luego habrá una tabla general, en donde se mostrarán los mejores tiempos de todo el juego.</p>
                         </div>
@@ -198,14 +204,14 @@
             </div>
 
             <div class="seccion-video-index">
-                <h2 class="texto-titulo-video-index">Handless en acción</h2>
+                <h2 class="texto-titulos-index">Handless en acción</h2>
                 <div class="row embed-responsive embed-responsive-16by9 index-video">
-                    <a href="https://youtu.be/cfxi3KSJhwI" class="lazy-youtube-embed">Handless en Accion</a>
+                    <a href="https://youtu.be/cfxi3KSJhwI" class="lazy-youtube-embed" aria-label="Handless en Accion">Handless en Accion</a>
                 </div>
             </div>
             <div class="flecha-subir-container">
                 <a href="#inicio">
-                    <button type="button" class="btn btn-lg btn-floating btn-footer flecha-subir">
+                    <button type="button" class="btn btn-lg btn-floating btn-footer flecha-subir" aria-label="volver al inicio">
                     <i class="fas fa-arrow-circle-up"></i>
                 </button>
                 </a>
@@ -215,17 +221,17 @@
 
     <footer class="text-center text-lg-start footer">
         <div class="container d-flex justify-content-center py-5 btn-footer-container">
-            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer">
-                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer" aria-label="Ir a Facebook">
+                <a href="https://facebook.com" aria-label="Facebook" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
             </button>
-            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer">
-                <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer" aria-label="Ir a Youtube">
+                <a href="https://youtube.com" aria-label="Youtube" rel="noreferrer"><i class="fab fa-youtube"></i></a>
             </button>
-            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer">
-                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer" aria-label="Ir a Instagram">
+                <a href="https://instagram.com" aria-label="Instagram" rel="noreferrer"><i class="fab fa-instagram"></i></a>
                 </button>
-            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer">
-                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <button type="button" class="btn btn-lg btn-floating mx-2 btn-footer" aria-label="Ir a Twitter">
+                <a href="https://twitter.com" aria-label="Ir a Twitter" rel="noreferrer"><i class="fab fa-twitter"></i></a>
             </button>
         </div>
 
