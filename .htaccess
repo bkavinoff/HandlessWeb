@@ -1,8 +1,10 @@
+ErrorDocument 404 /404.html
+
+<FilesMatch "\.(gif|jpg|jpeg|png|swf|flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|ttf|woff|svg)$">
+     Header set Cache-Control "max-age=86400"
+</FilesMatch>
 
 # HTID:18244464: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18244464:
 
-<FilesMatch "\.(gif|jpg|jpeg|png|swf|flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|ttf|woff|svg)$">
-     Header set Cache-Control "max-age=86400"
-</FilesMatch>

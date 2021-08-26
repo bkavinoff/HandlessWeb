@@ -20,7 +20,7 @@
 
     <!-- meta tags -->
     <!-- 70 a 320 caracteres / 180 es nivel dios -->
-    <meta name="description" content="Si tenés dudas, consultas o sugerencias, envianos un mensaje!">
+    <meta name="description" content="Gracias por ponerte en contacto con nosotros, te responderemos a la brevedad.">
     <!-- Keywords -->
     <!-- Normalmente 20 keywords está bien -->
     <meta name="keywords" content="Juego, Plataforma, 2D, Handless, Aventura, Mundos Imaginarios, Niño, Sueño, Miedos, Enemigos, Niveles, Ranking, Unity, Unity 2D, Obstáculos, Dificultad, Estrategia, Colores, Lapices, Cementerio">
@@ -29,7 +29,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Handless|Contacto">
-    <meta property="og:description" content="Si tenés dudas, consultas o sugerencias, envianos un mensaje!">
+    <meta property="og:description" content="Gracias por ponerte en contacto con nosotros, te responderemos a la brevedad.">
     <meta property="og:site_name" content="Handless">
     <meta property="og:image" content="../multimedia/img/favicon/favicon-32x32.png">
     <meta property="og:locale" content="es ES">
@@ -41,7 +41,7 @@
     <link rel="manifest" href="../multimedia/img/favicon/site.webmanifest">
 
     <!-- Titulo -->
-    <title>Handless|Contacto</title>
+    <title>Handless|Contacto - Gracias</title>
 </head>
 
 <body>
@@ -116,36 +116,14 @@
 
     <!--Contenido-->
     <section class="titulo-seccion">
-        <h2>Contacto</h2>
+        <h2>Mensaje Enviado</h2>
     </section>
 
     <section class="cuerpo-seccion">
-        <form action="../lib/envioMail/enviar.php" method="POST" name="contact-form" class="formulario formulario-contacto">
-            <div class="mb-3">
-                <label for="usuario" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="usuario" name="usuario">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email">
-            </div>
-            <div class="mb-3">
-                <label for="motivo" class="form-label">Motivo</label>
-                <select id="motivo" class="form-select" aria-label="Motivo" name="motivo">
-                    <option selected>Seleccione...</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="problema">Reportar problema</option>
-                    <option value="otro">Otro</option>
-                  </select>
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" aria-label="With textarea" id="mensaje" name="mensaje"></textarea>
-            </div>
-            <div class="text-right">
-                <button type="submit" class="btn btn-outline-secondary btn-formulario">Enviar</button>
-            </div>
-        </form>
+        <div class="alert alert-success mensaje-correo-ok" role="alert">
+            <p>¡¡GENIAL!! Tu mensaje está viajando hacia nuestros servidores de correo. A la brevedad nos pondremos en contacto!</p>
+            <p>Mientras esperas la respuesta, te ofrecemos que pruebes <a href="https://bkavinoff.itch.io/handless" class="alert-link">Jugar a nuestro juego</a>, O bien, <a href="../index.html" class="alert-link">Volver al sitio principal</a></p>
+        </div>
     </section>
 
     <!--Footer-->
