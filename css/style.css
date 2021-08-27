@@ -308,7 +308,7 @@ header .bg-nav-handless #submenu-perfil {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   margin: 0;
-  background: url("../multimedia/img/404-bg.png") no-repeat;
+  background: url("../multimedia/img/404-bg.webp") no-repeat;
   background-clip: text;
   background-size: cover;
   background-position: center;
