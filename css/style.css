@@ -374,8 +374,15 @@ header .bg-nav-handless #submenu-perfil {
 
   /*Carousel*/
   .img-banner {
-    width: 1349px;
-    height: 603px;
+    height: 858px;
+  }
+
+  .img-banner-1 {
+    content: url(../multimedia/img/Banner1.webp);
+  }
+
+  .img-banner-2 {
+    content: url(../multimedia/img/Banner2.webp);
   }
 
   #carousel-index {
@@ -489,7 +496,15 @@ header .bg-nav-handless #submenu-perfil {
 
   /*Carousel*/
   .img-banner {
-    height: 400px;
+    height: 429px;
+  }
+
+  .img-banner-1 {
+    content: url(../multimedia/img/Banner1-Tablet.webp);
+  }
+
+  .img-banner-2 {
+    content: url(../multimedia/img/Banner2-Tablet.webp);
   }
 
   #carousel-index {
@@ -607,7 +622,15 @@ header .bg-nav-handless #submenu-perfil {
 
   /*Carousel*/
   .img-banner {
-    height: 250px;
+    height: 215px;
+  }
+
+  .img-banner-1 {
+    content: url(../multimedia/img/Banner1-Mobile.webp);
+  }
+
+  .img-banner-2 {
+    content: url(../multimedia/img/Banner2-Mobile.webp);
   }
 
   #carousel-index {
@@ -617,15 +640,15 @@ header .bg-nav-handless #submenu-perfil {
     max-height: min-content;
   }
   #carousel-index .carousel-caption .titulo-index {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 0;
   }
   #carousel-index .carousel-caption .banner-subtitulo {
     margin-bottom: 0;
   }
   #carousel-index .carousel-caption-superior {
-    bottom: 5.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .contenedor-h1-index .texto-titulos-index {
