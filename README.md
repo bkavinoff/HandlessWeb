@@ -8,7 +8,7 @@
 - 🔭 I’m currently working on [Handless Web](https://github.com/bkavinoff/HandlessWeb)
 - If you want to have a little taste of the game (beta), you can enter: <a href="https://bkavinoff.itch.io/handless">https://bkavinoff.itch.io/handless</a>
 
-- 📫 How to reach me **bkavinoff@gmail.com**
+- 📫 How to reach me: **https://linkedin.com/bkavinoff**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
