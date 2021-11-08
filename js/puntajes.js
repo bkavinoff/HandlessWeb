@@ -8,7 +8,7 @@ CargarArrayUsuarios();
 MostrarTiemposRecord();
 
 //Muestro todos los datos de los usuarios ingresados, ordenados por nickname en CONSOLA
-MostrarTodosLosDatos();
+//MostrarTodosLosDatos();
 
 //genero mis rows:
 GenerarDatosTablaPuntajesGeneral();
@@ -22,13 +22,13 @@ function MostrarTiemposRecord() {
     }
 }
 
-function MostrarTodosLosDatos() {
-    console.log("Array ordenado por tiempo:");
-    let arr = OrdenarArrayUsuarios();
-    for (const user of arr) {
-        console.log(user);
-    }
-}
+// function MostrarTodosLosDatos() {
+//     console.log("Array ordenado por tiempo:");
+//     let arr = OrdenarArrayUsuarios();
+//     for (const user of arr) {
+//         console.log(user);
+//     }
+// }
 
 function OrdenarArrayUsuarios() {
     let ordenado = ArrayUsuarios.sort(OrdenarPorTiempoRecord);
@@ -41,8 +41,13 @@ function GenerarDatosTablaPuntajesGeneral() {
 
     //genero mi plantilla:
     let i = 0;
-    for (const usuario of ArrayUsuarios) {
+    let arr = OrdenarArrayUsuarios();
+    for (const usuario of arr) {
         i++;
+
+        //solo muestro el top 10:
+        if (i > 10) { break; }
+
         let row = document.createElement("tr")
         row.innerHTML = `<td scope="row">${i}</td>
         <td>${usuario.nickname}</td>
