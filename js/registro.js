@@ -87,7 +87,13 @@ function SetErrorRegistro(texto) {
             </div>`
         );
 
-        $("#divErrorRegistro").fadeIn(1000);
+        $("#divErrorRegistro")
+            .slideDown(300)
+            .fadeIn(300)
+            .fadeOut(300)
+            .fadeIn(300)
+            .fadeOut(300)
+            .fadeIn(300);
     }
 }
 
