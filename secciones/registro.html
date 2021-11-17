@@ -42,9 +42,16 @@
 
     <!-- Titulo -->
     <title>Handless|Registro</title>
+
+    <style>
+        .errorRegistro {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
+
     <!--Menu Principal-->
     <header id="inicio">
         <nav class="navbar navbar-expand-lg navbar-light bg-nav-handless fixed-top">
@@ -122,7 +129,7 @@
         <h2>Registro</h2>
     </section>
     <section class="cuerpo-seccion">
-        <form id="formularioRegistro" class="formulario">
+        <form id="formularioRegistro" class="formulario" name="formularioRegistro">
             <div class="mb-3">
                 <label for="emailRegistro" class="form-label">Email</label>
                 <input type="email" class="form-control" id="emailRegistro" aria-describedby="emailRegistroHelp">
@@ -141,28 +148,29 @@
                 <label for="password2Registro" class="form-label">Confirme Password</label>
                 <input type="password" class="form-control" id="password2Registro">
             </div>
-            <div class="mb-3">
-                <span id="errorRegistroUsuario" class="form-text text-danger"></span>
+            <div id="errorContainer" class="mb-3">
+
             </div>
             <div class="text-center">
-                <button id="btnEnviarRegistro" type="submit" class="btn btn-outline-secondary btn-formulario" data-bs-toggle="modal" data-bs-target="#modalRegistroOK">Enviar</button>
+                <button id="btnEnviarRegistro" type="submit" class="btn btn-outline-secondary btn-formulario" data-bs-toggle="modal">Enviar</button>
             </div>
         </form>
     </section>
 
     <section>
-        <div id="modalRegistroOK" class="modal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal -->
+        <div class="modal fade" id="modalRegistroOK" tabindex="-1" aria-labelledby="modalRegistroOKLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Registro</h5>
+                        <h5 class="modal-title" id="modalRegistroOKLabel">Registro</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <p>El usuario ha sido creado con éxito</p>
                     </div>
                     <div class="modal-footer">
-                        <button id="btnOKRegistroExitoso" type="button" class="btn btn-outline-secondary btn-formulario" data-bs-dismiss="modal">OK</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -192,9 +200,14 @@
         </div>
     </footer>
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
     <script src="../js/clases.js"></script>
     <script src="../js/funcionesGenerales.js"></script>
     <script src="../js/registro.js"></script>
+
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -1,31 +1,40 @@
 let ArrayUsuarios = [];
 
-//-----------------------------Programa principal-----------------------------
+//document.ready:
+$(() => {
+    //-----------------------------Programa principal-----------------------------
+    $("#btnEnviarRegistro").on("click", ClickRegistroUsuario);
 
-//asigno el evento al botón de registro
-let botonRegistro = document.getElementById("btnEnviarRegistro");
-botonRegistro.addEventListener("click", ClickRegistroUsuario);
-
-let btnOKRegistroExitoso = document.getElementById("btnOKRegistroExitoso");
-botonRegistro.addEventListener("click", LimpiarFormularioRegistro);
-
+    //al mostrarse el modal, limpio el formulario
+    $("#modalRegistroOK").on("shown.bs.modal", function() {
+        formularioRegistro.reset();
+    });
+});
 //-------------------------Funciones Registro Usuarios------------------------
-
-function LimpiarFormularioRegistro(e) {
-    document.querySelector("#formularioRegistro").reset();
-}
 
 function ClickRegistroUsuario(e) {
     e.preventDefault();
     CargarArrayUsuarios();
     SetErrorRegistro(null);
-    let emailRegistro = document.querySelector("#emailRegistro").value;
-    let usuarioRegistro = document.querySelector("#usuarioRegistro").value;
-    let passwordRegistro = document.querySelector("#passwordRegistro").value;
-    let password2Registro = document.querySelector("#password2Registro").value;
+    let emailRegistro = $("#emailRegistro").val();
+    let usuarioRegistro = $("#usuarioRegistro").val();
+    let passwordRegistro = $("#passwordRegistro").val();
+    let password2Registro = $("#password2Registro").val();
+
+    //Verifico si el correo ingresado ya está registrado
+    if (VerificarCampoExiste("email", emailRegistro) == true) {
+        SetErrorRegistro("El correo ya se encuentra registrado.");
+        return;
+    }
+
+    //Verifico si el nickname ingresado ya está registrado
+    if (VerificarCampoExiste("nickname", usuarioRegistro) == true) {
+        SetErrorRegistro("El usuario ya se encuentra registrado.");
+        return;
+    }
 
     //verifico si la password coincide:
-    if (VerificarPassword(passwordRegistro, password2Registro) == true) {
+    if (PasswordOK(passwordRegistro, password2Registro) == true) {
 
         //genero el objeto usuario
         let user = GenerarUsuario(emailRegistro, usuarioRegistro, passwordRegistro);
@@ -35,18 +44,51 @@ function ClickRegistroUsuario(e) {
 
         //lo guardo en el storage:
         GuardarUsuarioEnStorage(user);
+
+        //muestro el modal:
+        $('#modalRegistroOK').modal("toggle");
     } else {
         SetErrorRegistro("El password no coincide");
     }
 }
 
-function VerificarPassword(p1, p2) {
+function VerificarCampoExiste(parametro, valor) {
+
+    //recorro mi array de usuarios
+    for (const user of ArrayUsuarios) {
+
+        //según sea el parámetro, verifico el campo correspondiente
+        switch (parametro) {
+            case "email":
+                if (user.email == valor) {
+                    return true;
+                }
+                break;
+            case "nickname":
+                if (user.nickname == valor) {
+                    return true;
+                }
+                break;
+        }
+    }
+    return false;
+}
+
+function PasswordOK(p1, p2) {
     return (p1 == p2);
 }
 
 function SetErrorRegistro(texto) {
-    let errorText = document.querySelector("#errorRegistroUsuario");
-    errorText.innerHTML = texto;
+    $("#errorContainer").empty();
+    if (texto != null) {
+        $("#errorContainer").append(
+            `<div id="divErrorRegistro" class="errorRegistro">
+            <p4 style="color:red;"><strong>${texto}</strong></p4>
+            </div>`
+        );
+
+        $("#divErrorRegistro").fadeIn(1000);
+    }
 }
 
 function GuardarUsuarioEnStorage(user) {
@@ -58,10 +100,6 @@ function GuardarUsuarioEnStorage(user) {
 
     //y vuelvo a grabar el array en el storage
     localStorage.setItem("ArrayUsuarios", objeto);
-}
-
-function MostrarError(mensaje) {
-    alert(mensaje);
 }
 
 function GenerarTiemposRecord() {

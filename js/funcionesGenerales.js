@@ -1,8 +1,8 @@
 function CargarArrayUsuarios() {
     if (localStorage.getItem("ArrayUsuarios") != null) {
         ArrayUsuarios = JSON.parse(localStorage.getItem("ArrayUsuarios"));
-        let tipo = typeof(ArrayUsuarios);
-        console.log(tipo);
+        //let tipo = typeof(ArrayUsuarios);
+        //console.log(tipo);
     }
 }
 

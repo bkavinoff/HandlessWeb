@@ -1,17 +1,18 @@
 let ArrayUsuarios = [];
 
-//-----------------------------Programa principal-----------------------------
+//document.ready:
+$(() => {
 
-CargarArrayUsuarios();
+    //-----------------------------Programa principal-----------------------------
+    CargarArrayUsuarios();
 
-//Muestro los tiempos record en CONSOLA:
-MostrarTiemposRecord();
+    //Muestro los tiempos record en CONSOLA:
+    MostrarTiemposRecord();
 
-//Muestro todos los datos de los usuarios ingresados, ordenados por nickname en CONSOLA
-//MostrarTodosLosDatos();
+    //genero mis rows:
+    GenerarDatosTablaPuntajesGeneral();
+});
 
-//genero mis rows:
-GenerarDatosTablaPuntajesGeneral();
 
 //-------------------------Funciones Tablas de Puntajes------------------------
 
@@ -22,14 +23,6 @@ function MostrarTiemposRecord() {
     }
 }
 
-// function MostrarTodosLosDatos() {
-//     console.log("Array ordenado por tiempo:");
-//     let arr = OrdenarArrayUsuarios();
-//     for (const user of arr) {
-//         console.log(user);
-//     }
-// }
-
 function OrdenarArrayUsuarios() {
     let ordenado = ArrayUsuarios.sort(OrdenarPorTiempoRecord);
     return ordenado;
@@ -37,7 +30,7 @@ function OrdenarArrayUsuarios() {
 
 function GenerarDatosTablaPuntajesGeneral() {
     //obtengo el nodo padre:
-    let tablaGeneral = document.getElementById("tbody-general");
+    let tablaGeneral = $("#tbody-general");
 
     //genero mi plantilla:
     let i = 0;
@@ -53,6 +46,6 @@ function GenerarDatosTablaPuntajesGeneral() {
         <td>${usuario.nickname}</td>
         <td>${usuario.tiempoRecord}</td>`;
 
-        tablaGeneral.appendChild(row);
+        tablaGeneral.append(row);
     }
 }
