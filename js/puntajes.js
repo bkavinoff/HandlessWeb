@@ -44,6 +44,9 @@ function GenerarDatosTablaPuntajes(tabla, arrayAGenerar) {
     //obtengo el nodo padre:
     let tbl = $("#tbody-" + tabla);
 
+    //limpio la tabla:
+    tbl.empty();
+
     // obtengo el array ordenado:
     let arr = OrdenarArrayUsuarios(arrayAGenerar);
 
