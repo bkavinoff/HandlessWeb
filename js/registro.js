@@ -1,5 +1,4 @@
 let ArrayUsuarios = [];
-
 //document.ready:
 $(() => {
     //-----------------------------Programa principal-----------------------------
@@ -109,31 +108,19 @@ function GuardarUsuarioEnStorage(user) {
 }
 
 function GenerarTiemposRecord() {
-    let tiempo = "";
-    let minutos = Math.floor(Math.random() * 60);
-    let segundos = Math.floor(Math.random() * 60);
-    let centesimas = Math.floor(Math.random() * 100);
+    let tiemposRecord = [];
+    for (let i = 0; i <= 3; i++) {
+        let minutos = Math.floor(Math.random() * 60);
+        let segundos = Math.floor(Math.random() * 60);
+        let miliSegundos = Math.floor(Math.random() * 100);
 
-    let minutosTexto = ObtenerNumeroConCeros(false, minutos);
-    let segundosTexto = ObtenerNumeroConCeros(false, segundos);
-    let centesimasTexto = ObtenerNumeroConCeros(true, centesimas);
-    tiempo = (minutosTexto + ":" + segundosTexto + ":" + centesimasTexto);
-    return tiempo;
-}
+        let minutosTexto = ObtenerNumeroConCeros(false, minutos);
+        let segundosTexto = ObtenerNumeroConCeros(false, segundos);
+        let miliSegundosTexto = ObtenerNumeroConCeros(true, miliSegundos);
 
-function ObtenerNumeroConCeros(esCentesima, numero) {
-    let numeroConCeros = numero;
+        let tiempo = GenerarTiempo(minutosTexto, segundosTexto, miliSegundosTexto);
 
-    //horas y minutos:
-    if (esCentesima == false && numero < 10) {
-        numeroConCeros = "0" + numero
+        tiemposRecord.push(tiempo);
     }
-
-    //centesimas:
-    if (esCentesima == true && numero < 10) {
-        numeroConCeros = "00" + numero
-    } else if (esCentesima == true && numero >= 10 && numero < 100) {
-        numeroConCeros = "0" + numero
-    }
-    return numeroConCeros;
+    return tiemposRecord;
 }

@@ -10,8 +10,13 @@ $(() => {
     //Muestro los tiempos record en CONSOLA:
     MostrarTiemposRecord();
 
-    //genero mis rows:
+    //genero mis tablas:
     GenerarDatosTablaPuntajes("general", ArrayUsuarios);
+
+    //Nivel 1 lo cargo con AJAX desde un archivo para mostrar esa funcionalidad
+    //GenerarDatosTablaPuntajes("nivel-1", ArrayUsuarios);
+    GenerarDatosTablaPuntajes("nivel-2", ArrayUsuarios);
+    GenerarDatosTablaPuntajes("nivel-3", ArrayUsuarios);
 });
 
 
@@ -31,12 +36,39 @@ function CargarPuntajesNivel1AJAX(e) {
 function MostrarTiemposRecord() {
     console.log("Array ordenado por orden de ingreso:");
     for (const user of ArrayUsuarios) {
-        console.log("Tiempo record del usuario " + user.nickname + ": " + user.tiempoRecord);
+        console.log("Tiempo record del usuario " + user.nickname + ": General:" + user.tiemposRecord[0].tiempoString + " - Nivel 1:" + user.tiemposRecord[1].tiempoString + " - Nivel 2:" + user.tiemposRecord[2].tiempoString + " - Nivel 3:" + user.tiemposRecord[3].tiempoString);
     }
 }
 
-function OrdenarArrayUsuarios(arr) {
-    let ordenado = arr.sort(OrdenarPorTiempoRecord);
+function OrdenarArrayUsuarios(arr, tabla) {
+    let ordenado = [];
+    switch (tabla) {
+        case "general":
+            {
+                ordenado = arr.sort(OrdenarPorTiempoRecordGeneral);
+                break;
+            }
+        case "nivel-1":
+            {
+                ordenado = arr.sort(OrdenarPorTiempoRecordNivel1);
+                break;
+            }
+        case "nivel-2":
+            {
+                ordenado = arr.sort(OrdenarPorTiempoRecordNivel2);
+                break;
+            }
+        case "nivel-3":
+            {
+                ordenado = arr.sort(OrdenarPorTiempoRecordNivel3);
+                break;
+            }
+        default:
+            {
+                ordenado = arr.sort(OrdenarPorTiempoRecordGeneral);
+                break;
+            }
+    }
     return ordenado;
 }
 
@@ -48,11 +80,41 @@ function GenerarDatosTablaPuntajes(tabla, arrayAGenerar) {
     tbl.empty();
 
     // obtengo el array ordenado:
-    let arr = OrdenarArrayUsuarios(arrayAGenerar);
+    let arr = OrdenarArrayUsuarios(arrayAGenerar, tabla);
 
     let i = 0;
     for (const usuario of arr) {
         i++;
+
+        let tiempo;
+        switch (tabla) {
+            case "general":
+                {
+                    tiempo = usuario.tiemposRecord[0].tiempoString;
+                    break;
+                }
+            case "nivel-1":
+                {
+                    tiempo = usuario.tiemposRecord[1].tiempoString;
+                    break;
+                }
+            case "nivel-2":
+                {
+                    tiempo = usuario.tiemposRecord[2].tiempoString;
+                    break;
+                }
+            case "nivel-3":
+                {
+                    tiempo = usuario.tiemposRecord[3].tiempoString;
+                    break;
+                }
+            default:
+                {
+                    tiempo = usuario.tiemposRecord[0].tiempoString;
+                    break;
+                }
+        }
+
 
         //genero mi plantilla:
         //solo muestro el top 10:
@@ -61,7 +123,7 @@ function GenerarDatosTablaPuntajes(tabla, arrayAGenerar) {
         let row = document.createElement("tr");
         row.innerHTML = `<td scope="row">${i}</td>
         <td>${usuario.nickname}</td>
-        <td>${usuario.tiempoRecord}</td>`;
+        <td>${tiempo}</td>`;
 
         tbl.append(row);
     }
