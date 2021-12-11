@@ -120,11 +120,21 @@ function GenerarDatosTablaPuntajes(tabla, arrayAGenerar) {
         //solo muestro el top 10:
         if (i > 10) { break; }
 
+        let color = GetColorUserLogged(userLogged, usuario.email);
         let row = document.createElement("tr");
-        row.innerHTML = `<td scope="row">${i}</td>
-        <td>${usuario.nickname}</td>
-        <td>${tiempo}</td>`;
+        row.innerHTML = `<td scope="row" ${color}>${i}</td>
+        <td ${color}>${usuario.nickname}</td>
+        <td ${color}>${tiempo}</td>`;
 
         tbl.append(row);
     }
+}
+
+function GetColorUserLogged(userLogged, email) {
+    let color = "";
+    if (userLogged == email) {
+        color = "style='color:red;'"
+    }
+
+    return color;
 }
